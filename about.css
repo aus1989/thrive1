@@ -1,0 +1,161 @@
+.about .container{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0 40px;
+}
+
+
+.text{
+  text-align: center;
+}
+
+.text2{
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+@media screen and (max-width: 940px) {
+  .about .container h1, .text{
+    text-align: center;
+  }
+
+  .text2{
+    font-size: 16px;
+
+  }
+}
+
+.about-card{
+  width: 90%;
+  margin: auto;
+  padding: 30px 20px 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #eee;
+}
+
+.about-card .container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+  
+}
+
+.card-item{
+  background-color: #eee;
+  border-radius: 8px;
+  min-height: 210px;
+  padding: 20px;
+  transition: background .5s, transform .5s;
+}
+
+.card-item:hover{
+  background-color: var(--primary);
+  transform: translateY(-10px);
+  color: white;
+}
+
+.card-item h5{
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 940px) {
+  .about-card{
+    width: 100%;
+  }
+
+  .about-card .container{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ============ FAQ CSS ============== */
+.faq-container{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+.faq-container h2{
+  margin-bottom: 20px;
+}
+
+.question{
+  width: 100%;
+  padding: 10px 30px;
+}
+
+.question-title{
+  width: 100%;
+  border: 1px solid #ddd;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.question-text{
+  padding-top: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #ddd;
+}
+
+.question-btn{
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: var(--primary);
+}
+
+.plus-icon,.minus-icon{
+  font-size: 18px;
+}
+
+/* hide text */
+
+.question-text{
+  display: none;
+}
+
+.show-text .question-text{
+  display: block;
+}
+
+.minus-icon{
+  display: none;
+}
+
+.show-text .minus-icon{
+  display: inline;
+}
+.show-text .plus-icon{
+  display: none;
+}
+
+@media screen and (max-width: 940px) {
+  .faq-container{
+    width: 100%;
+  }
+}

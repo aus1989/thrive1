@@ -1,0 +1,63 @@
+/* ============== MARKET PLACE CSS =========*/
+.market-place .container{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0 20px;
+}
+
+@media screen and (max-width: 940px) {
+  .market-place .container h1, .text{
+    text-align: center;
+  }
+}
+
+.coin-card{
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.coin-card .container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+}
+
+.card-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  border-radius: 8px;
+  min-height: 70px;
+  padding: 0 30px;
+}
+
+.coin-img-container{
+  display: flex;
+  align-items: center;
+}
+
+#coin-img{
+  width: 40px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 940px) {
+  .coin-card{
+    width: 100%;
+  }
+
+  .coin-card .container{
+    grid-template-columns: 1fr;
+  }
+}
+
+

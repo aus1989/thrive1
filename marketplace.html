@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="marketplace.css">
+  <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="loader.css">
+</head>
+<body>
+
+  <div class='header'>
+    <div class="container">
+      <a href="index.html">
+        <img src="images/logo.png" alt="logo"/>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="marketplace.html">Market Place</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <i class="bi bi-x hamburger" onclick="closeMenu()"></i>
+      </ul>
+      <div class="btn-group">
+        <a href=""><button class='btn'>Login</button></a>
+      </div>
+      <i class="bi bi-list hamburger" onclick="openMenu()"></i>
+    </div>
+  </div>
+
+  <!-- --------- MARKET SECTION -------- -->
+  <div class="market-place">
+    <div class="container">
+      <h1>Best Coin Price Tracker on the Market</h1>
+      <p class="text">
+        With Thrive Token, you can manage all your crypto assets from one interface.
+      </p>
+    </div>
+  </div>
+
+  <!-------------- COIN CARD ------------->
+
+  <div class="coin-card">
+    <div class="container">
+      <div id="btc-coin"></div>
+      <div id="eth-coin"></div>
+    </div>
+  </div>
+  <br>
+  <!-------------- COIN TABLE ------------>
+  <div class="home-coin-card">
+    <div class="container">
+      <h1>Cryptocurrencies</h1>
+      <div class="title">
+        <div class="home-card-title">
+          <div class="name">
+            <p>Name</p>
+          </div>
+          <div class="price">
+            <p>Price</p>
+          </div>
+          <div class="percent">
+            <p>1h%</p>
+          </div>
+          <div class="percent p2">
+            <p>24h%</p>
+          </div>
+          <div class="percent p3">
+            <p>7d%</p>
+          </div>
+          <div class="market mc">
+            <p>Market Cap</p>
+          </div>
+        </div>
+      </div>
+      <div id="allCoins"></div>
+
+      <div class="display">
+        <div class="display-container">
+          <div id="singleCoin" class="single-coin">
+            
+          </div>
+          <span class="bi bi-x close-icon"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+
+  <!------------ FOOTER SECTION ------------>
+  <div class='footer'>
+    <p>Get in touch</p>
+    <div class="app">
+      <a href="">
+        <img src="images/app-store-icon.png" alt="app-store">
+      </a>
+      <a href="">
+        <img src="images/playstore1.png" alt="play-store">
+      </a>
+    </div>
+    <div class="container">
+      <div class="col">
+        <h5>Company</h5>
+        <span class='bar'></span>
+          <a href="/">About us</a>
+          <a href="/">Product Updates</a>
+          <a href="/">Pricing</a>
+          <a href="/">Career</a>
+      </div>
+      <div class="col">
+        <h5>Support</h5>
+        <span class='bar'></span>
+          <a href="/">Chat</a>
+          <a href="/">Help Center</a>
+          <a href="/">FAQ</a>
+      </div>
+      <div class="col">
+        <h5>Explore</h5>
+        <span class='bar'></span>
+          <a href="/">Crypto Tracker</a>
+          <a href="/">Thrive Token Debit card</a>
+          <a href="/">Earn</a>
+          <a href="/">Crypto News</a>
+          <a href="/">Blog</a>
+      </div>
+      <div class="col">
+        <h5>Social</h5>
+        <span class='bar'></span>
+          <a href="/"><i class="bi bi-facebook icon"></i></a>
+          <a href="/"><i class="bi bi-github icon"></i></a>
+          <a href="/"><i class="bi bi-linkedin icon"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let navMenu = document.querySelector(".nav-menu");
+
+    function openMenu(){
+      navMenu.style.right = "0";
+    }
+
+    function closeMenu(){
+      navMenu.style.right = "-250px";
+    }
+  </script>
+
+  <script src="marketplace.js"></script>
+  <script src="loader.js"></script>
+</body>
+</html>
